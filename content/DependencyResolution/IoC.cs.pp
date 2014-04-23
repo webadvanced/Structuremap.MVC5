@@ -15,7 +15,7 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-
+using StructureMap;
 using StructureMap.Graph;
 namespace $rootnamespace$.DependencyResolution {
     public static class IoC {
