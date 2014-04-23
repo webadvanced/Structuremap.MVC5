@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<package> 
+  <metadata> 
+    <id>StructureMap.MVC5</id> 
+    <version>3.0.2.115</version> 
+    <authors>Web Advanced</authors>
+    <owners>paul, WebAdvanced</owners>
+	<licenseUrl>https://github.com/webadvanced/Structuremap.MVC5/blob/master/LICENSE</licenseUrl>
+    <description>Adds the latest version of structuremap and configures it as the default Dependency Resolver for ASP.NET MVC5. Does not work with 'ApiControllers', please add the Structuremap.WebAPI2 package if you need WebAPI support.</description> 
+    <summary>An MVC5 IDependencyResolver wrapper for Structuremap 3.x</summary>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <language>en-US</language>
+    <projectUrl>https://github.com/webadvanced/Structuremap.MVC5</projectUrl>
+    <dependencies>
+      <dependency id="WebActivator" version="1.5.1" />
+      <dependency id="CommonServiceLocator" version="1.0" />
+      <dependency id="structuremap" version="3.0.2.115" />
+    </dependencies>
+  </metadata> 
+  <files>
+      <file src="content\**\*.pp" target="content" />
+  </files>
+</package>
