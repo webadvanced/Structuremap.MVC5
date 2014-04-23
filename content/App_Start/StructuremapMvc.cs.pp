@@ -25,7 +25,7 @@ namespace $rootnamespace$.App_Start {
     public static class StructuremapMvc {
         public static void Start() {
 			IContainer container = IoC.Initialize();
-            DependencyResolver.SetResolver(new StructureMapDependencyResolver(container));
+            DependencyResolver.SetResolver(new StructureMapDependencyScope(container));
         }
     }
 }

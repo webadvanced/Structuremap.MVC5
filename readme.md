@@ -1,5 +1,5 @@
-#An MVC4 IDependencyResolver wrapper for Structuremap 2.x
-**Works with 'Controllers' and 'ApiControllers'.**
+#An MVC5 IDependencyResolver wrapper for Structuremap 3.x
+**Works with `MVC Controllers` only. If you need `WebApi Controler` support install the `Structuremap.WebApi2` package.**
 
 [**What it adds to your solution**]
 
@@ -11,7 +11,6 @@
 3 Files:
 
 * App_Start/StructuremapMvc.cs
-* DependencyResolution/StructureMapDependencyResolver.cs 
 * DependencyResolution/StructureMapDependencyScope.cs 
 * DependencyResolution/IoC.cs (Structuremap's ObjectFactory Initialization, this is where you would define your mappings)
 
