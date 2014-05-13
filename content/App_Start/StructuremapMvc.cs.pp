@@ -19,7 +19,7 @@ using $rootnamespace$.App_Start;
 
 using WebActivatorEx;
 
-[assembly: PreApplicationStartMethod(typeof(StructuremapMvc), "PreStart")]
+[assembly: PreApplicationStartMethod(typeof(StructuremapMvc), "Start")]
 
 namespace $rootnamespace$.App_Start {
 	using System.Web.Mvc;
@@ -39,7 +39,7 @@ namespace $rootnamespace$.App_Start {
 		
 		#region Public Methods and Operators
 
-        public static void PreStart() {
+        public static void Start() {
             IContainer container = IoC.Initialize();
             StructureMapDependencyScope = new StructureMapDependencyScope(container);
             DependencyResolver.SetResolver(StructureMapDependencyScope);
