@@ -11,7 +11,8 @@
 3 Files:
 
 * App_Start/StructuremapMvc.cs
-* DependencyResolution/StructureMapDependencyScope.cs 
+* DependencyResolution/StructureMapDependencyScope.cs
+* DependencyResolution/StructureMapScopeModule.cs 
 * DependencyResolution/IoC.cs (Structuremap's ObjectFactory Initialization, this is where you would define your mappings)
 
 
