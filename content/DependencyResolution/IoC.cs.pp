@@ -15,9 +15,13 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-using StructureMap;
-using StructureMap.Graph;
+
 namespace $rootnamespace$.DependencyResolution {
+    using StructureMap;
+	using StructureMap.Graph;
+    using StructureMap.Web;
+	using StructureMap.Web.Pipeline;
+	
     public static class IoC {
         public static IContainer Initialize() {
             ObjectFactory.Initialize(x =>
