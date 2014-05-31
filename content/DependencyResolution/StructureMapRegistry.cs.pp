@@ -1,5 +1,5 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="IoC.cs" company="Web Advanced">
+// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="StructureMapRegistry.cs" company="Web Advanced">
 // Copyright 2012 Web Advanced (www.webadvanced.com)
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -15,13 +15,22 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-
 namespace $rootnamespace$.DependencyResolution {
-    using StructureMap;
+    using StructureMap.Configuration.DSL;
+    using StructureMap.Graph;
 	
-    public static class IoC {
-        public static IContainer Initialize() {
-            return new Container(c => c.AddRegistry<StructureMapRegistry>());
+    public class StructureMapRegistry : Registry {
+        #region Constructors and Destructors
+
+        public StructureMapRegistry() {
+            Scan(
+                scan => {
+                    scan.TheCallingAssembly();
+                    scan.WithDefaultConventions();
+                });
+            //For<IExample>().Use<Example>();
         }
+
+        #endregion
     }
 }
