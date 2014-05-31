@@ -8,27 +8,24 @@
 * App_Start (If not already in your solution)
 * DependencyResolution
 
-3 Files:
+4 Files:
 
 * App_Start/StructuremapMvc.cs
 * DependencyResolution/StructureMapDependencyScope.cs
 * DependencyResolution/StructureMapScopeModule.cs 
-* DependencyResolution/IoC.cs (Structuremap's ObjectFactory Initialization, this is where you would define your mappings)
+* DependencyResolution/IoC.cs 
+* DependencyResolution/StructureMapRegistry.cs (This is where you would define your mappings)
 
 
 [**Default configuration**]
 
-	public static IContainer Initialize() {
-            ObjectFactory.Initialize(x =>
-                        {
-                            x.Scan(scan =>
-                                    {
-                                        scan.TheCallingAssembly();
-                                        scan.WithDefaultConventions();
-                                    });
-            //                x.For<IExample>().Use<Example>();
-                        });
-            return ObjectFactory.Container;
-        }
+	public StructureMapRegistry() {
+		Scan(
+			scan => {
+				scan.TheCallingAssembly();
+				scan.WithDefaultConventions();
+			});
+		//For<IExample>().Use<Example>();
+	}
 
 This configuration will *just work* for any Interfaces and concrete implementations that follow the default convention and are part of the MVC project. I.E. ISomeService.cs implemented with SomeService.cs
