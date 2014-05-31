@@ -2,7 +2,7 @@
 <package> 
   <metadata> 
     <id>StructureMap.MVC5</id> 
-    <version>3.0.3.116</version> 
+    <version>3.0.3.117</version> 
     <authors>Web Advanced</authors>
     <owners>paul, WebAdvanced</owners>
 	<licenseUrl>https://github.com/webadvanced/Structuremap.MVC5/blob/master/LICENSE</licenseUrl>
