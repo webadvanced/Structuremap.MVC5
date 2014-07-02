@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?> 
-<package> 
-  <metadata> 
-    <id>StructureMap.MVC5</id> 
-    <version>3.0.3.117</version> 
+<package>
+  <metadata>
+    <id>StructureMap.MVC5</id>
+    <version>3.0.4.125</version>
     <authors>Web Advanced</authors>
     <owners>paul, WebAdvanced</owners>
 	<licenseUrl>https://github.com/webadvanced/Structuremap.MVC5/blob/master/LICENSE</licenseUrl>

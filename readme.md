@@ -14,12 +14,12 @@
 * DependencyResolution/StructureMapDependencyScope.cs
 * DependencyResolution/StructureMapScopeModule.cs 
 * DependencyResolution/IoC.cs 
-* DependencyResolution/StructureMapRegistry.cs (This is where you would define your mappings)
+* DependencyResolution/DefaultRegistry.cs (This is where you would define your mappings)
 
 
 [**Default configuration**]
 
-	public StructureMapRegistry() {
+	public DefaultRegistry() {
 		Scan(
 			scan => {
 				scan.TheCallingAssembly();

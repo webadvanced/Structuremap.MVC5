@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright file="StructureMapRegistry.cs" company="Web Advanced">
+// <copyright file="DefaultRegistry.cs" company="Web Advanced">
 // Copyright 2012 Web Advanced (www.webadvanced.com)
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -19,10 +19,10 @@ namespace $rootnamespace$.DependencyResolution {
     using StructureMap.Configuration.DSL;
     using StructureMap.Graph;
 	
-    public class StructureMapRegistry : Registry {
+    public class DefaultRegistry : Registry {
         #region Constructors and Destructors
 
-        public StructureMapRegistry() {
+        public DefaultRegistry() {
             Scan(
                 scan => {
                     scan.TheCallingAssembly();
