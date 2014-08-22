@@ -8,7 +8,7 @@
 * App_Start (If not already in your solution)
 * DependencyResolution
 
-4 Files:
+6 Files:
 
 * App_Start/StructuremapMvc.cs
 * DependencyResolution/StructureMapDependencyScope.cs
