@@ -13,7 +13,8 @@
 * App_Start/StructuremapMvc.cs
 * DependencyResolution/StructureMapDependencyScope.cs
 * DependencyResolution/StructureMapScopeModule.cs 
-* DependencyResolution/IoC.cs 
+* DependencyResolution/IoC.cs
+* DependencyResolution/ControllerConvention.cs
 * DependencyResolution/DefaultRegistry.cs (This is where you would define your mappings)
 
 
@@ -24,6 +25,7 @@
 			scan => {
 				scan.TheCallingAssembly();
 				scan.WithDefaultConventions();
+				scan.With(new ControllerConvention()); //Ensures a new Controller instance is created each time
 			});
 		//For<IExample>().Use<Example>();
 	}
